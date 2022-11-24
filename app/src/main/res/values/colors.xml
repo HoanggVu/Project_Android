@@ -11,6 +11,7 @@
     <color name="Darken">#ff6655</color>
     <color name="Saturate">#fbf1e6</color>
     <color name="Desaturate2">#f8c7c2</color>
+    <color name="colortext">#373b54</color>
     <color name="Desaturate">#f5f1ec</color>
     <color name="Greyscale">#f0f0f0</color>
     <!--   color for the app bar and other primary UI elements -->
