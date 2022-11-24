@@ -119,28 +119,28 @@
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="80dp"
-        android:layout_width="360dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center">
         <Button
             android:id="@+id/btn_change"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Change"
-            android:fontFamily="@font/baloo"
-            android:layout_gravity="center_horizontal"/>
+            android:fontFamily="@font/baloo"/>
         <Button
-            android:id="@+id/btn_logout"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/btn_back"
             android:background="@drawable/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Log Out"
-            android:fontFamily="@font/baloo"
-            android:layout_gravity="center_horizontal"/>
+            android:text="Back"
+            android:fontFamily="@font/baloo"/>
+
     </LinearLayout>
 
 </LinearLayout>

@@ -14,7 +14,7 @@ import com.example.doantest.R;
 
 public class Profile extends AppCompatActivity {
 
-    private Button btnChange, btnLogout;
+    private Button btnChange, btnBack;
     private EditText etName, etAccount, etPass, etPhone, etAddess;
     private ImageView imgViewInfo;
 
@@ -25,15 +25,16 @@ public class Profile extends AppCompatActivity {
 
         getID();
         setChange();
-        setLogout();
+        setBack();
     }
 
-    private void setLogout() {
-        btnLogout.setOnClickListener(new View.OnClickListener() {
+    private void setBack() {
+        getID();
+        btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent backHome = new Intent(Profile.this, MainActivity.class);
-                startActivity(backHome);
+                Intent intentProduct = new Intent(Profile.this, MainActivity.class);
+                startActivity(intentProduct);
             }
         });
     }
@@ -50,6 +51,6 @@ public class Profile extends AppCompatActivity {
 
     private void getID() {
         btnChange = findViewById(R.id.btn_change);
-        btnLogout = findViewById(R.id.btn_logout);
+        btnBack = findViewById(R.id.btn_back);
     }
 }

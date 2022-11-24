@@ -119,12 +119,45 @@
                 android:textColorHint="#858585"
                 android:textSize="25sp" />
 
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background"
+                android:ems="10"
+                android:hint="Phone"
+                android:textAlignment="center"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColorHint="#858585"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background"
+                android:ems="10"
+                android:hint="Address"
+                android:textAlignment="center"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColorHint="#858585"
+                android:textSize="25sp" />
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/background_btn">
 
                 <TextView

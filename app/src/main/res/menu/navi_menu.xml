@@ -5,29 +5,32 @@
 
     <group android:checkableBehavior="single">
         <item android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu"
+            android:icon="@drawable/ic_baseline_home_24"
             android:title="Home"/>
         <item android:id="@+id/nav_order"
-            android:icon="@drawable/ic_menu"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
             android:title="Order"/>
         <item android:id="@+id/nav_fb"
-            android:icon="@drawable/ic_menu"
-            android:title="FeedBack"/>
+            android:icon="@drawable/ic_baseline_email_24"
+            android:title="Feedback"/>
     </group>
 
 
        <item android:title="Profile">
            <menu>
                <item android:id="@+id/nav_profile"
-                   android:icon="@drawable/ic_menu"
+                   android:icon="@drawable/ic_baseline_account_circle_24"
                    android:title="Profile"/>
+               <item android:id="@+id/nav_Logout"
+                   android:icon="@drawable/ic_baseline_exit_to_app_24"
+                   android:title="Logout"/>
            </menu>
        </item>
    <item android:title="Communicate">
     <menu>
         <item android:id="@+id/nav_facebook"
             android:icon="@drawable/ic_menu"
-            android:title="FaceBook"/>
+            android:title="Facebook"/>
         <item android:id="@+id/nav_insta"
             android:icon="@drawable/ic_menu"
             android:title="Instagram"/>

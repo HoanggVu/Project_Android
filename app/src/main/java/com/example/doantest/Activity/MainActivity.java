@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //set logo
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayShowHomeEnabled(true);
-        actionBar.setLogo(R.drawable.logo);    //logo
+        actionBar.setLogo(R.drawable.logo);
         actionBar.setDisplayUseLogoEnabled(true);
 
         //set button menu
@@ -223,6 +223,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_profile:
                 Intent intentProfile = new Intent(MainActivity.this, Profile.class);
                 startActivity(intentProfile);
+                break;
+            case R.id.nav_Logout:
+                Intent intentLogin = new Intent(MainActivity.this, Login.class);
+                startActivity(intentLogin);
                 break;
         }
         return true;

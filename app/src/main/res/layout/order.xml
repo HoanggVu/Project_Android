@@ -46,10 +46,10 @@
                         android:id="@+id/txtName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="User Name: "
+                        android:text="User Name:"
                         android:layout_weight="1"
                         android:textColor="@color/colortext"
-                        android:Size="16dp"
+                        android:textSize="16dp"
                         android:textStyle="bold"/>
                     <TextView
                         android:id="@+id/txtUserName"
@@ -57,7 +57,7 @@
                         android:layout_height="wrap_content"
                         android:text="Nguyễn Hoàng Vũ"
                         android:textColor="@color/colortext"
-                        android:Size="16dp"
+                        android:textSize="16dp"
                         android:textStyle="bold"/>
                 </LinearLayout>
                 <LinearLayout
@@ -75,7 +75,7 @@
                         android:text="Phone: "
                         android:layout_weight="1"
                         android:textColor="@color/colortext"
-                        android:Size="16dp"
+                        android:textSize="16dp"
                         android:textStyle="bold"/>
                     <TextView
                         android:id="@+id/txtUserPhone"
@@ -83,7 +83,7 @@
                         android:layout_height="wrap_content"
                         android:text="0862373645"
                         android:textColor="@color/colortext"
-                        android:Size="16dp"
+                        android:textSize="16dp"
                         android:textStyle="bold"/>
                 </LinearLayout>
                 <LinearLayout
@@ -101,7 +101,7 @@
                         android:text="Address: "
                         android:layout_weight="1"
                         android:textColor="@color/colortext"
-                        android:Size="16dp"
+                        android:textSize="16dp"
                         android:textStyle="bold"/>
                     <TextView
                         android:id="@+id/txtUserAddress"
@@ -109,7 +109,7 @@
                         android:layout_height="wrap_content"
                         android:text="Sơn Trà - Đà Nẵng"
                         android:textColor="@color/colortext"
-                        android:Size="16dp"
+                        android:textSize="16dp"
                         android:textStyle="bold"/>
                 </LinearLayout>
 
@@ -228,7 +228,7 @@
 
             <LinearLayout
                 android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="10dp"
                 android:layout_width="360dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -236,6 +236,7 @@
 
                 <Button
                     android:id="@+id/btn_dat"
+                    android:layout_marginBottom="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -245,6 +246,7 @@
 
                 <Button
                     android:id="@+id/btn_back"
+                    android:layout_marginBottom="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
