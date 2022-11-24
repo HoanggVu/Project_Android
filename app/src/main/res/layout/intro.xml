@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Intro">
+
+    <ImageView
+        android:id="@+id/img_background_intro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/backround"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="60dp"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Miu"
+            android:textSize="40sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button"
+                android:fontFamily="@font/baloo"
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="180dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/baloo"
+                android:text="Register" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
