@@ -94,8 +94,6 @@ public class ChangeInfo extends AppCompatActivity {
                     list.setPassword(strPass);
                     list.setPhone(strPhone);
                     list.setAddress(strAddress);
-
-
                     UserDatabase.getInstance(this).userDAO().updateUser((list));
                 }
             }

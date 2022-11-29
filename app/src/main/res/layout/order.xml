@@ -151,7 +151,7 @@
                         android:id="@+id/tv_price_item"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0 VND"
+                        android:text="114.000 VND"
                         android:textColor="@color/colortext"
                         android:textSize="16dp"
                         android:textStyle="bold" />
@@ -180,7 +180,7 @@
                         android:id="@+id/tv_price_charges"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0 VND"
+                        android:text="2000 VND"
                         android:textColor="@color/colortext"
                         android:textSize="16dp"
                         android:textStyle="bold" />
@@ -219,7 +219,7 @@
                         android:id="@+id/tv_price_total"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="0 VND"
+                        android:text="116.000 VND"
                         android:textColor="@color/colortext"
                         android:textSize="30dp"
                         android:textStyle="bold" />

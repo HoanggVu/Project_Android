@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void OnClickAddToCart(ImageView imgAddToCart, com.example.doantest.Activity.Menu.Menu menu) {
 
-                Toast.makeText(MainActivity.this, "Check", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Đã Thêm Vào Giỏ Hàng", Toast.LENGTH_SHORT).show();
             }
         });
         rcvMenu.setAdapter(menuAdapter);

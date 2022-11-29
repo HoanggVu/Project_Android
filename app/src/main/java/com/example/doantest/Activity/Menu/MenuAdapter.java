@@ -1,6 +1,7 @@
 package com.example.doantest.Activity.Menu;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.doantest.Activity.Card.SlideCard;
+import com.example.doantest.Activity.InfoProduct;
 import com.example.doantest.R;
 
 import java.util.List;
@@ -50,7 +52,6 @@ public class MenuAdapter extends  RecyclerView.Adapter<MenuAdapter.MenuViewHoler
         holder.img_menu.setImageResource(menu.getResourceImage());
         holder.tv_title_menu.setText(menu.getTitle());
         holder.tv_price_menu.setText(menu.getPrice());
-
         holder.imgAddToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

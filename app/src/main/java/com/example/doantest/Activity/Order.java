@@ -54,12 +54,6 @@ public class Order extends AppCompatActivity {
                 txtName.setText(list.getUsername());
                 txtPhone.setText(list.getPhone());
                 txtAddress.setText(list.getAddress());
-
-
-                /*Log.d("this","Used profile: "+ list.getPassword());
-                Log.d("this","Used profile: "+ list.getAddress());
-                Log.d("this","Used profile: "+ list.getPhone());
-                Log.d("this","Used profile: "+ list.getUsername());*/
             }
         }
     }
@@ -76,7 +70,7 @@ public class Order extends AppCompatActivity {
         orderAdapter.setData(getListOrder(), new OrderAdapter.IClickDelete() {
             @Override
             public void OnClickDelete(ImageView imgDelete, com.example.doantest.Activity.Product.Order product) {
-                Toast.makeText(Order.this, "Check", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Order.this, "Đã Xóa Khỏi Giỏ Hàng", Toast.LENGTH_SHORT).show();
             }
         });
         rcvOrder.setAdapter(orderAdapter);
@@ -84,13 +78,9 @@ public class Order extends AppCompatActivity {
 
     private List<com.example.doantest.Activity.Product.Order> getListOrder() {
         List<com.example.doantest.Activity.Product.Order> list = new ArrayList<>();
-        list.add(new com.example.doantest.Activity.Product.Order(R.drawable.cardview1, "name", "25.000 VND"));
-        list.add(new com.example.doantest.Activity.Product.Order(R.drawable.cardview2, "name", "25.000 VND"));
-        list.add(new com.example.doantest.Activity.Product.Order(R.drawable.cardview3, "name", "25.000 VND"));
-
-        list.add(new com.example.doantest.Activity.Product.Order(R.drawable.cardview1, "name", "25.000 VND"));
-        list.add(new com.example.doantest.Activity.Product.Order(R.drawable.cardview2, "name", "25.000 VND"));
-
+        list.add(new com.example.doantest.Activity.Product.Order(R.drawable.cardview1, "Trà Sữa Trân Trâu", "30.000 VND"));
+        list.add(new com.example.doantest.Activity.Product.Order(R.drawable.cardview2, "Trà Sửa Matcha", "35.000 VND"));
+        list.add(new com.example.doantest.Activity.Product.Order(R.drawable.cardview3, "Nước Cam", "49.000 VND"));
         return list;
     }
 
@@ -107,7 +97,7 @@ public class Order extends AppCompatActivity {
         btnDat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Order.this, "Check", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Order.this, "Đặt Hàng Thành Công!!", Toast.LENGTH_SHORT).show();
             }
         });
     }

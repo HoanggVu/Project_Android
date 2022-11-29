@@ -20,6 +20,7 @@ public interface UserDAO {
     @Query("SELECT * FROM user where email = :email")
     List<User> checkUser(String email);
 
+
     @Update()
     void updateUser(User user);
 }

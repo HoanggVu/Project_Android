@@ -1,6 +1,7 @@
 package com.example.doantest.Activity.Card;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.doantest.Activity.InfoProduct;
 import com.example.doantest.Activity.MainActivity;
 import com.example.doantest.Activity.Menu.Menu;
 import com.example.doantest.Activity.Menu.MenuAdapter;
@@ -54,7 +56,7 @@ public class SlideCardAdapter extends RecyclerView.Adapter<SlideCardAdapter.Slid
         cardAdapter.setData(slideCard.getCards(), new CardAdapter.IClickAddToCart() {
             @Override
             public void OnClickAddToCart(ImageView imgAddToCart, Card card) {
-                Toast.makeText(mContext, "Check", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, "Đã Thêm Vào Giỏ Hàng", Toast.LENGTH_SHORT).show();
             }
         });
         holder.rcvCard.setAdapter(cardAdapter);
