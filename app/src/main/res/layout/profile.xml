@@ -19,16 +19,25 @@
                 android:layout_margin="40dp"
                 android:src="@drawable/logo"
                 android:layout_gravity="center_horizontal"/>
-            <TextView
-
-                android:id="@+id/et_name"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/baloo"
-                android:text="Name User"
-                android:textSize="30sp"
-                android:layout_gravity="center_horizontal"/>
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_baseline_account_circle_24"/>
+                <TextView
+                    android:id="@+id/txtNameProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Name User"
+                    android:textSize="30sp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
         </LinearLayout>
     </RelativeLayout>
     <TextView
@@ -40,39 +49,36 @@
         android:textSize="24sp"
         android:gravity="center_horizontal"/>
     <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_gravity="center">
+        android:padding="10dp">
         <LinearLayout
-            android:layout_marginLeft="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_menu"/>
+                android:src="@drawable/ic_email"/>
             <TextView
-                android:id="@+id/et_account"
+                android:id="@+id/txtEmailProfile"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="Account"
+                android:text="Email"
                 android:fontFamily="@font/baloo"/>
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_menu"/>
+                android:src="@drawable/ic_password"/>
             <TextView
-                android:id="@+id/et_pass"
+                android:id="@+id/txtPassProfile"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -82,15 +88,14 @@
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_menu"/>
+                android:src="@drawable/ic_smartphone"/>
             <TextView
-                android:id="@+id/et_phone"
+                android:id="@+id/txtPhoneProfile"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -100,15 +105,14 @@
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_menu"/>
+                android:src="@drawable/ic_baseline_home_24"/>
             <TextView
-                android:id="@+id/et_address"
+                android:id="@+id/txtAddressProfile"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

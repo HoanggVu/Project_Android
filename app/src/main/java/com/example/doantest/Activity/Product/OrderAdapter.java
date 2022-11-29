@@ -17,7 +17,6 @@ public class OrderAdapter extends  RecyclerView.Adapter<OrderAdapter.ProductView
 
     private List<Order> mListProduct;
     private IClickDelete iClickDelete;
-
     public interface IClickDelete{
         void OnClickDelete(ImageView imgDelete, Order product);
     }

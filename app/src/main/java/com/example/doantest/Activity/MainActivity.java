@@ -26,7 +26,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.doantest.Activity.Menu.MenuAdapter;
-import com.example.doantest.Activity.Product.OrderAdapter;
 import com.example.doantest.R;
 import com.google.android.material.navigation.NavigationView;
 
@@ -62,7 +61,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setNav();
         //set toolbar
         setToolbar();
+
     }
+
 
     private void setToolbar() {
         setSupportActionBar(toolbar);
@@ -100,6 +101,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         menuAdapter.setData(getListMenu(), new MenuAdapter.IClickAddToCart() {
             @Override
             public void OnClickAddToCart(ImageView imgAddToCart, com.example.doantest.Activity.Menu.Menu menu) {
+
                 Toast.makeText(MainActivity.this, "Check", Toast.LENGTH_SHORT).show();
             }
         });
@@ -109,21 +111,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private List<com.example.doantest.Activity.Menu.Menu> getListMenu() {
         List<com.example.doantest.Activity.Menu.Menu> listMenu = new ArrayList<>();
 
-        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview1, "Menu 1", "25.000VN"));
-        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview2, "Menu 2", "25.000VN"));
-        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.carview3, "Menu 3", "25.000VN"));
+        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview1, "Trà Sữa Trân Trâu", "30.000 VND"));
+        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview2, "Trà Sửa Matcha", "35.000 VND"));
+        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview3, "Nước Cam", "49.000 VND"));
 
-        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview1, "Menu 1", "25.000VN"));
-        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview2, "Menu 2", "25.000VN"));
-        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.carview3, "Menu 3", "25.000VN"));
+        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview4, "Trà Sửa Thái Xanh", "30.000 VND"));
+        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview5, "Trà Sửa Socola", "30.000 VND"));
+        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview6, "Trà Sửa Khoai Môn", "30.000 VND"));
 
-        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview1, "Menu 1", "25.000VN"));
-        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview2, "Menu 2", "25.000VN"));
-        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.carview3, "Menu 3", "25.000VN"));
+        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview7, "Trà Đào", "25.000 VND"));
+        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview8, "Trà Sửa Việt Quất", "30.000 VND"));
+        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview9, "Trà Sửa Truyền Thống", "25.000 VND"));
 
-        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview1, "Menu 1", "25.000VN"));
-        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview2, "Menu 2", "25.000VN"));
-        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.carview3, "Menu 3", "25.000VN"));
+        listMenu.add(new com.example.doantest.Activity.Menu.Menu(R.drawable.cardview10, "Nước Chanh", "20.000 VND"));
         return listMenu;
     }
 
@@ -140,13 +140,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         List<SlideCard> listSildeCard = new ArrayList<>();
 
         List<Card> listCard = new ArrayList<>();
-        listCard.add(new Card(R.drawable.cardview1, "Card 1", "25.000 VND"));
-        listCard.add(new Card(R.drawable.cardview2, "Card 2", "25.000 VND"));
-        listCard.add(new Card(R.drawable.carview3, "Card 3", "25.000 VND"));
-
-        listCard.add(new Card(R.drawable.cardview1, "Card 1", "25.000 VND"));
-        listCard.add(new Card(R.drawable.cardview2, "Card 2", "25.000 VND"));
-        listCard.add(new Card(R.drawable.carview3, "Card 3", "25.000 VND"));
+        listCard.add(new Card(R.drawable.cardview2, "Trà Sửa Matcha", "35000 VND"));
+        listCard.add(new Card(R.drawable.cardview3, "Nước Cam", "49000 VND"));
+        listCard.add(new Card(R.drawable.cardview4, "Trà Sửa Thái Xanh", "30000 VND"));
+        listCard.add(new Card(R.drawable.cardview6, "Trà Sửa Khoai Môn", "30000 VND"));
+        listCard.add(new Card(R.drawable.cardview8, "Trà Sửa Việt Quất", "30000 VND"));
 
 
         listSildeCard.add(new SlideCard("Hot", listCard));
@@ -199,6 +197,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case android.R.id.home:
                 drawerLayout.openDrawer(GravityCompat.START);
                 return true;
+            case R.id.lienhe:
+                Intent intentFacebook = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/HoangVu0506"));
+                startActivity(intentFacebook);
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -210,8 +211,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_home:
                 break;
             case R.id.nav_order:
-                Intent intentOrder = new Intent(MainActivity.this, Order.class);
-                startActivity(intentOrder);
+                Intent intent = getIntent();
+                Bundle bundleOrder = intent.getExtras();
+                if (bundleOrder != null){
+                    int idLoginOrder = bundleOrder.getInt("ID_LOGIN");
+                    Intent intentOrder = new Intent(MainActivity.this, Order.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("ID_LOGIN_ORDER", idLoginOrder);
+                    intentOrder.putExtras(bundle);
+                    startActivity(intentOrder);
+                }
                 break;
             case R.id.nav_fb:
                 Intent intentFeedBack = new Intent(Intent.ACTION_SENDTO);
@@ -221,8 +230,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intentFeedBack);
                 break;
             case R.id.nav_profile:
-                Intent intentProfile = new Intent(MainActivity.this, Profile.class);
-                startActivity(intentProfile);
+                Intent intent1 = getIntent();
+                Bundle bundleProfile = intent1.getExtras();
+                if (bundleProfile != null) {
+                    int idLoginProfile = bundleProfile.getInt("ID_LOGIN");
+                    Intent intentProfile = new Intent(MainActivity.this, Profile.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("ID_LOGIN_PROFILE", idLoginProfile);
+                    intentProfile.putExtras(bundle);
+                    startActivity(intentProfile);
+                }
                 break;
             case R.id.nav_Logout:
                 Intent intentLogin = new Intent(MainActivity.this, Login.class);

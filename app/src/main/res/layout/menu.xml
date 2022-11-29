@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="210dp"
     android:layout_marginEnd="10dp"
     android:layout_marginTop="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:orientation="vertical">
 
         <ImageView
@@ -26,19 +26,22 @@
                 <TextView
                     android:id="@+id/tv_title_menu"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
                     android:text="Cardview1"
                     android:padding="6dp"
-                    android:textSize="16sp"
+                    android:textSize="12sp"
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:id="@+id/tv_price_menu"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
                     android:text="25.000 VND"
                     android:layout_marginTop="5dp"
                     android:padding="6dp"
-                    android:textSize="12sp"
+                    android:textSize="10sp"
                     android:textColor="@android:color/black"/>
             </LinearLayout>
     </LinearLayout>

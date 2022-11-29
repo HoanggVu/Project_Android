@@ -3,6 +3,7 @@ package com.example.doantest.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.Room;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.doantest.Activity.Product.OrderAdapter;
+import com.example.doantest.Activity.User.User;
+import com.example.doantest.Activity.User.UserDatabase;
 import com.example.doantest.R;
 
 import java.util.ArrayList;
@@ -22,7 +25,9 @@ public class Order extends AppCompatActivity {
     private Button btnDat, btnBack;
     private RecyclerView rcvOrder;
     private OrderAdapter orderAdapter;
-    private TextView tvPriceTotal, tvPriceItem, tvPriceCharges;
+    private List<User> mListUser;
+    private Order order;
+    private TextView tvPriceTotal, tvPriceItem, tvPriceCharges, txtName, txtPhone, txtAddress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +39,33 @@ public class Order extends AppCompatActivity {
         setBack();
         setOrder();
         Calculator();
+        setProfile();
+
+
+    }
+
+    private void setProfile() {
+        Bundle extras = getIntent().getExtras();
+        UserDatabase userDatabase = Room.databaseBuilder(getApplicationContext(), UserDatabase.class, "user.db").allowMainThreadQueries().build();
+        mListUser = userDatabase.userDAO().getUser();
+        for (User list: mListUser) {
+            if (list.getId() == extras.getInt("ID_LOGIN_ORDER")){
+
+                txtName.setText(list.getUsername());
+                txtPhone.setText(list.getPhone());
+                txtAddress.setText(list.getAddress());
+
+
+                /*Log.d("this","Used profile: "+ list.getPassword());
+                Log.d("this","Used profile: "+ list.getAddress());
+                Log.d("this","Used profile: "+ list.getPhone());
+                Log.d("this","Used profile: "+ list.getUsername());*/
+            }
+        }
     }
 
     private void Calculator() {
-        getID();
+
     }
 
     private void setOrder() {
@@ -58,7 +86,7 @@ public class Order extends AppCompatActivity {
         List<com.example.doantest.Activity.Product.Order> list = new ArrayList<>();
         list.add(new com.example.doantest.Activity.Product.Order(R.drawable.cardview1, "name", "25.000 VND"));
         list.add(new com.example.doantest.Activity.Product.Order(R.drawable.cardview2, "name", "25.000 VND"));
-        list.add(new com.example.doantest.Activity.Product.Order(R.drawable.carview3, "name", "25.000 VND"));
+        list.add(new com.example.doantest.Activity.Product.Order(R.drawable.cardview3, "name", "25.000 VND"));
 
         list.add(new com.example.doantest.Activity.Product.Order(R.drawable.cardview1, "name", "25.000 VND"));
         list.add(new com.example.doantest.Activity.Product.Order(R.drawable.cardview2, "name", "25.000 VND"));
@@ -70,8 +98,7 @@ public class Order extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentBack = new Intent(Order.this, MainActivity.class);
-                startActivity(intentBack);
+                onBackPressed();
             }
         });
     }
@@ -89,6 +116,9 @@ public class Order extends AppCompatActivity {
         btnDat = findViewById(R.id.btn_dat);
         btnBack = findViewById(R.id.btn_back);
         rcvOrder = findViewById(R.id.rcv_order);
+        txtName = findViewById(R.id.txtUserName);
+        txtPhone = findViewById(R.id.txtUserPhone);
+        txtAddress = findViewById(R.id.txtUserAddress);
         tvPriceItem = findViewById(R.id.tv_price_item);
         tvPriceCharges = findViewById(R.id.tv_price_charges);
         tvPriceTotal = findViewById(R.id.tv_price_total);

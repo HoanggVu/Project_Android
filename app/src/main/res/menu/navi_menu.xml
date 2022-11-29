@@ -14,8 +14,6 @@
             android:icon="@drawable/ic_baseline_email_24"
             android:title="Feedback"/>
     </group>
-
-
        <item android:title="Profile">
            <menu>
                <item android:id="@+id/nav_profile"
@@ -26,14 +24,4 @@
                    android:title="Logout"/>
            </menu>
        </item>
-   <item android:title="Communicate">
-    <menu>
-        <item android:id="@+id/nav_facebook"
-            android:icon="@drawable/ic_menu"
-            android:title="Facebook"/>
-        <item android:id="@+id/nav_insta"
-            android:icon="@drawable/ic_menu"
-            android:title="Instagram"/>
-    </menu>
-</item>
 </menu>

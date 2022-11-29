@@ -12,7 +12,10 @@
         <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/drawable/btn_order.xml" value="0.2165" />
         <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/drawable/button.xml" value="0.2165" />
         <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2165" />
+        <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/drawable/ic_email.xml" value="0.2165" />
+        <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/drawable/ic_menu.xml" value="0.2165" />
         <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/drawable/order_background.xml" value="0.2165" />
+        <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/layout/activity_main.xml" value="0.3625" />
         <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/layout/card.xml" value="0.3625" />
         <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/layout/change_info.xml" value="0.3625" />
         <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/layout/intro.xml" value="0.3625" />
@@ -22,6 +25,10 @@
         <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/layout/order.xml" value="0.3625" />
         <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/layout/profile.xml" value="0.3625" />
         <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/layout/register.xml" value="0.3625" />
+        <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/layout/slide.xml" value="0.3625" />
+        <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/layout/slide_card.xml" value="0.3625" />
+        <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/layout/view_profile.xml" value="0.3625" />
+        <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/layout/vieworder.xml" value="0.3625" />
         <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/menu/menu_toolbar.xml" value="0.3625" />
         <entry key="..\:/Study/mobile/DoAnAndroid/app/src/main/res/menu/navi_menu.xml" value="0.3625" />
         <entry key="..\:/Study/mobile/DoAnTest/app/src/main/res/drawable/Close.xml" value="0.2165" />
